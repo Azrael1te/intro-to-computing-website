@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600;700&display=swap');
 
 :root {
@@ -25,8 +24,6 @@ body {
 
 /*Opening*/
 /*The hero is the first large visible area of a webpage*/
-
-
 
 /* One continuous background for the hero and parallax */
 .coffee-parallax {
@@ -122,7 +119,6 @@ body {
     }
 }
 
-
 .scroll-indicator {
     z-index: 1;
 }
@@ -192,23 +188,88 @@ body {
     color: var(--coffee-brown);
 }
 
-/*For Later*/
-
-.menu-placeholder {
-    min-height: 50svh;
-    padding: 6rem 1.5rem;
+/* --- Menu Teaser Section Styles --- */
+.menu-section {
     background-color: var(--cream);
     color: var(--coffee-brown);
+    padding: 7rem 0 5rem;
     text-align: center;
+    overflow: hidden;
 }
 
-.menu-placeholder p {
+.menu-teaser-content {
+    max-width: 700px;
+    margin: 0 auto 4rem;
+    padding: 0 1.5rem;
+}
+
+.menu-teaser-content h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
-.menu-placeholder h2 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 500;
+.menu-teaser-content .about-description {
+    color: var(--coffee-brown);
+    margin-bottom: 2rem;
+}
+
+.menu-teaser-content .about-link {
+    border-color: var(--coffee-brown);
+    color: var(--coffee-brown);
+}
+
+.menu-teaser-content .about-link:hover {
+    background-color: var(--coffee-brown);
+    color: var(--cream);
+}
+
+/* --- Drink Conveyor Marquee Styles (Bigger Cups & Overlapping) --- */
+.drink-conveyor-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.drink-track {
+    display: flex;
+    width: max-content;
+    gap: 1rem;
+    animation: scrollConveyor 40s linear infinite;
+}
+
+.drink-item {
+    width: 280px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.drink-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.15));
+}
+
+.drink-item:hover {
+    transform: scale(1.1) translateY(-10px);
+    z-index: 10;
+}
+
+@keyframes scrollConveyor {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /*Mobile Ver*/

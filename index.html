@@ -17,10 +17,10 @@
 <!-- Logo -->
 <!-- The hero is the first large visible area of a webpage -->
 
-<!-- Continuous coffee background with hero and parallax -->
+<!-- class n labeling -->
 <section class="coffee-parallax" aria-label="Besh Kape introduction">
 
-    <!-- One image behind the entire opening section -->
+    <!-- parallax image -->
     <img
         src="assets/images/menu1bg.jpg"
         alt=""
@@ -28,7 +28,7 @@
         aria-hidden="true"
     >
 
-    <!-- Opening logo and information -->
+    <!-- logo n info -->
     <header class="hero" id="home">
         <img
             src="assets/images/beshmainlogo.png"
@@ -43,35 +43,69 @@
         </div>
     </header>
 
-    <!-- Extends the same background below the logo -->
+    <!-- about BG -->
     <div class="coffee-parallax-extension" aria-hidden="true"></div>
 
 </section>
 
 
-<!-- About -->
+<!-- about -->
     <section class="about" id="about">
         <div class="about-content">
             <p class="eyebrow">OUR STORY</p>
 
-            <h1>More than just coffee.</h1>
+            <h1>A Love Language.</h1>
 
             <p class="about-description">
-                Basta bili ka nalang mura samin eh
+                2 best of friends 2 coffee lovers... Started 2003.
             </p>
 
-            <a href="#menu" class="about-link">
+            <!-- to history page -->
+            <a href="history.html" class="about-link">
                 GET TO KNOW US
             </a>
         </div>
     </section>
 
-<!-- Menu -->
-    <section class="menu-placeholder" id="menu">
-        <p>OUR MENU</p>
-        <h2>Pili ka na boi.</h2>
-        <p>Menu coming soon.</p>
-    </section>
+<!-- Menu Teaser & Drink Conveyor Section -->
+<section class="menu-section" id="menu">
+    <!-- Interactive Drink Conveyor Marquee (Now at the Top) -->
+    <div class="drink-conveyor-container">
+        <div class="drink-track" id="drinkTrack">
+            <!-- First set of drinks -->
+            <div class="drink-item"><img src="assets/images/americano.webp" alt="Americano"></div>
+            <div class="drink-item"><img src="assets/images/slatt.webp" alt="Spanish Latte"></div>
+            <div class="drink-item"><img src="assets/images/mocha.webp" alt="Mocha"></div>
+            <div class="drink-item"><img src="assets/images/dmatcha.webp" alt="Dark Matcha"></div>
+            <div class="drink-item"><img src="assets/images/bmatcha.webp" alt="Blue Matcha"></div>
+            <div class="drink-item"><img src="assets/images/smilk.webp" alt="Strawberry Milk"></div>
+            <div class="drink-item"><img src="assets/images/mespr.webp" alt="Matcha Espresso"></div>
+            <div class="drink-item"><img src="assets/images/psoda.webp" alt="Pink Soda"></div>
+            <div class="drink-item"><img src="assets/images/pchoco.webp" alt="Premium Chocolate"></div>
+            
+            <!-- Exact duplicate set for seamless infinite loop -->
+            <div class="drink-item"><img src="assets/images/americano.webp" alt="Americano"></div>
+            <div class="drink-item"><img src="assets/images/slatt.webp" alt="Spanish Latte"></div>
+            <div class="drink-item"><img src="assets/images/mocha.webp" alt="Mocha"></div>
+            <div class="drink-item"><img src="assets/images/dmatcha.webp" alt="Dark Matcha"></div>
+            <div class="drink-item"><img src="assets/images/bmatcha.webp" alt="Blue Matcha"></div>
+            <div class="drink-item"><img src="assets/images/smilk.webp" alt="Strawberry Milk"></div>
+            <div class="drink-item"><img src="assets/images/mespr.webp" alt="Matcha Espresso"></div>
+            <div class="drink-item"><img src="assets/images/psoda.webp" alt="Pink Soda"></div>
+            <div class="drink-item"><img src="assets/images/pchoco.webp" alt="Premium Chocolate"></div>
+        </div>
+    </div>
 
-</body>
-</html>
+    <!-- Menu Teaser Content (Now below the marquee) -->
+    <div class="menu-teaser-content">
+        <p class="eyebrow">OUR MENU</p>
+        <h2>Pili ka na boi.</h2>
+        <p class="about-description" style="color: var(--coffee-brown);">
+            Explore our full lineup of espresso, matcha, and refreshing non-coffee drinks crafted just for you.
+        </p>
+        <!-- Button leading to the future menu page -->
+        <a href="menu.html" class="about-link" style="border-color: var(--coffee-brown); color: var(--coffee-brown);">
+            VIEW FULL MENU
+        </a>
+    </div>
+</section>
