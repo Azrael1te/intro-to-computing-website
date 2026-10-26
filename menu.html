@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Besh Kape</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="menu-header">
+        <a href="index.html" class="about-link">&larr; BACK TO HOME</a>
+        <h1>Besh Kape Menu</h1>
+        <p class="eyebrow">A LOVE LANGUAGE</p>
+    </header>
+
+    <main class="menu-container">
+
+        <!-- Centered Category Filter Buttons with data-target hooks -->
+        <nav class="category-tabs" aria-label="Menu category selector">
+            <button class="tab-btn active" data-target="espresso">Iced / Hot Espresso</button>
+            <button class="tab-btn" data-target="matcha">Matcha & Barista's Choice</button>
+            <button class="tab-btn" data-target="non-coffee">Non-Coffee</button>
+            <button class="tab-btn" data-target="addons">Make It The Besh!</button>
+        </nav>
+
+        <!-- Dynamic Menu Items Area -->
+        <section class="menu-display">
+
+            <!-- Category 1: Iced/Hot Espresso -->
+            <div class="menu-category-group active" id="espresso">
+                <div class="category-header">
+                    <h2>Iced / Hot Espresso</h2>
+                    <span>PRICE</span>
+                </div>
+                <ul class="menu-item-list">
+                    <li><span class="item-name">Americano</span><span class="item-price">₱65</span></li>
+                    <li><span class="item-name">Latte</span><span class="item-price">₱75</span></li>
+                    <li><span class="item-name">Spanish Latte</span><span class="item-price">₱75</span></li>
+                    <li><span class="item-name">Mocha</span><span class="item-price">₱80</span></li>
+                    <li><span class="item-name">Dark Chocolate</span><span class="item-price">₱80</span></li>
+                    <li><span class="item-name">Matcha Espresso</span><span class="item-price">₱80</span></li>
+                    <li><span class="item-name">Caramel Macchiato</span><span class="item-price">₱80</span></li>
+                </ul>
+            </div>
+
+            <!-- Category 2: Matcha Series & Barista's Choice -->
+            <div class="menu-category-group" id="matcha">
+                <div class="category-header">
+                    <h2>Matcha Series</h2>
+                    <span>PRICE</span>
+                </div>
+                <ul class="menu-item-list">
+                    <li><span class="item-name">Matcha Latte</span><span class="item-price">₱75</span></li>
+                    <li><span class="item-name">Dark Matcha</span><span class="item-price">₱80</span></li>
+                    <li><span class="item-name">Pink Matcha</span><span class="item-price">₱80</span></li>
+                    <li><span class="item-name">Blue Matcha</span><span class="item-price">₱80</span></li>
+                </ul>
+
+                <div class="category-header section-spacer" style="margin-top: 2rem;">
+                    <h2>Barista's Choice</h2>
+                    <span>PRICE</span>
+                </div>
+                <ul class="menu-item-list">
+                    <li><span class="item-name">Special Blend</span><span class="item-price">₱95</span></li>
+                </ul>
+            </div>
+
+            <!-- Category 3: Non-Coffee -->
+            <div class="menu-category-group" id="non-coffee">
+                <div class="category-header size-header">
+                    <h2>Non-Coffee</h2>
+                    <div class="size-labels" style="display: flex; gap: 2rem;">
+                        <span>SMALL</span>
+                        <span>REGULAR</span>
+                    </div>
+                </div>
+                <ul class="menu-item-list">
+                    <li>
+                        <span class="item-name">Premium Chocolate</span>
+                        <span class="item-prices" style="display: flex; gap: 3rem;"><span>₱65</span><span>₱75</span></span>
+                    </li>
+                    <li>
+                        <span class="item-name">Strawberry Milk</span>
+                        <span class="item-prices" style="display: flex; gap: 3rem;"><span>₱65</span><span>₱75</span></span>
+                    </li>
+                    <li>
+                        <span class="item-name">Blueberry Milk</span>
+                        <span class="item-prices" style="display: flex; gap: 3rem;"><span>₱65</span><span>₱75</span></span>
+                    </li>
+                    <li>
+                        <span class="item-name">Pink Soda</span>
+                        <span class="item-prices" style="display: flex; gap: 3rem;"><span>---</span><span>₱80</span></span>
+                    </li>
+                    <li>
+                        <span class="item-name">Blue Soda</span>
+                        <span class="item-prices" style="display: flex; gap: 3rem;"><span>---</span><span>₱80</span></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Category 4: Make It The Besh! -->
+            <div class="menu-category-group" id="addons">
+                <div class="category-header">
+                    <h2>Make It The Besh!</h2>
+                    <span>PRICE</span>
+                </div>
+                <ul class="menu-item-list">
+                    <li><span class="item-name">Frappe</span><span class="item-price">₱25</span></li>
+                    <li><span class="item-name">Espresso Shot</span><span class="item-price">₱25</span></li>
+                    <li><span class="item-name">Salted Cream</span><span class="item-price">₱20</span></li>
+                    <li><span class="item-name">Caramel Syrup</span><span class="item-price">₱15</span></li>
+                    <li><span class="item-name">Chocolate Syrup</span><span class="item-price">₱15</span></li>
+                    <li><span class="item-name">Milk Syrup</span><span class="item-price">₱15</span></li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
