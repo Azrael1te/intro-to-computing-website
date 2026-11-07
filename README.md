@@ -9,7 +9,7 @@ Timeline: October 5, 2026 – November 23, 2026
 Team Members:
      - Cybille Cabrerra
      - Matthew Soto
-     - Lhance Tristan
+     - Miguel Bustillo
 
 # Key Features
 - Brand Story & About Us: Short biography and history of Besh Kape.
